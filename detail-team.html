@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="description" content="Soccer" />
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <title>All About Soccer</title>
+    <!-- load komponen css dan javascript -->
+    <link rel="stylesheet" href="/asset/css/Quicksand-VariableFont_wght.ttf">
+    <link rel="stylesheet" href="/asset/css/materialize.min.css">
+    <link rel="stylesheet" href="/asset/css/style.css">
+    <link rel="manifest" href="/manifest.json">
+    <meta name="theme-color" content="#393e46" />
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <link rel="icon" type="icon" href="/soccer-ball-128.ico" />
+    <link rel="apple-touch-icon" href="/soccer-ball-128.ico" />
+</head>
+
+<main>
+    <!-- Navigasi -->
+    <nav class="navbar-fixed" role="navigation">
+        <div class="nav-wrapper">
+            <!-- <a id="logo-container" href="#" class="brand-logo"></a> -->
+            <a href="/index.html#team" class="sidenav-trigger black-text" data-target="nav-mobile">
+                <i class="material-icons">arrow_back</i>
+            </a>
+            <ul class="topnav right hide-on-med-and-down"></ul>
+        </div>
+    </nav>
+    <ul class="sidenav" id="nav-mobile"></ul>
+    <!-- Akhir Navigasi -->
+
+    <div id="body-content"></div>
+    <div class="fixed-action-btn" id="save">
+        <a onclick="M.toast({html: 'Team berhasil ditambahkan !', classes: 'rounded'})" class="btn-floating btn-large pulse">
+            <i class="large material-icons">save</i>
+        </a>
+    </div>
+    <div class="fixed-action-btn" id="remove">
+        <a onclick="M.toast({html: 'Team berhasil dihapus !', classes: 'rounded'})" class="btn-floating btn-large pulse">
+            <i class="large material-icons">delete</i>
+        </a>
+    </div>
+    <div id="preloader" class="preloader-background"></div>
+    <script type="text/javascript" src="https://unpkg.com/snarkdown@1.0.2/dist/snarkdown.umd.js"></script>
+    <script src="../script/materialize/materialize.min.js"></script>
+    <script src="../sw-register.js"></script>
+    <script src="../script/preloader.js"></script>
+    <script src="../script/api/api.js"></script>
+    <script src="../script/idb/idb.js"></script>
+    <script src="../script/idb/db.js"></script>
+    <script src="../script/save-team.js"></script>
+
+
+
+</main>
+<footer class="page-footer center-align">
+    <div class="footer-copyright">
+        © 2020 Copyright Submission PWA II Dicoding - IDS
+    </div>
+</footer>
+
+
+
+</html>

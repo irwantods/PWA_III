@@ -1,0 +1,79 @@
+main {
+    font-family: 'Quicksand', sans-serif !important;
+    flex: 1 0 auto;
+}
+
+i {
+    color: white !important;
+}
+
+body {
+    display: flex;
+    min-height: 100vh;
+    flex-direction: column;
+}
+
+span {
+    color: black !important;
+}
+
+.parallax-container {
+    width: 100%;
+}
+
+.navbar-fixed {
+    position: sticky;
+    top: 0 !important;
+    z-index: 33;
+    background-color: #393E46 !important;
+}
+
+.team-card .card {
+    max-width: 100% !important;
+    min-height: 330px !important;
+    border-radius: 16px;
+    box-shadow: 0 20px 40px rgba(0, 0, 0, 0.2);
+    transition: all 0.5s;
+}
+
+.card:hover {
+    box-shadow: 0px 6px 10px rgba(0, 0, 0, 0.4);
+    transform: scale(1.01);
+}
+
+.team-img img {
+    max-width: 200px !important;
+    margin: 0 auto !important;
+    padding: 20px 0 !important;
+    border-radius: 16px;
+}
+
+.sidenav {
+    background-color: #393E46 !important;
+}
+
+.page-footer {
+    background-color: #393E46 !important;
+}
+
+.btn-floating {
+    background-color: #00adb5 !important;
+}
+
+.preloader-background {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: #eee;
+    position: fixed;
+    z-index: 32;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+}
+
+.invisible {
+    opacity: 0 !important;
+    transition: all 0.5s !important;
+}
